@@ -1,8 +1,10 @@
+import { Router } from "./components"
+
 function App() {
   return (
-    <div>
-      <h1>React Ecomm</h1>
-    </div>
+    <>
+      <Router />
+    </>
   )
 }
 
