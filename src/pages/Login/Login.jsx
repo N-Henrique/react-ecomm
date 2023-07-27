@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Header } from "../../components";
 
 function Login() {
   const navigate = useNavigate();
@@ -9,14 +10,17 @@ function Login() {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Username" autoComplete="username" />
-        <input type="password" placeholder="Password" autoComplete="current-password" />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+    <>
+      <Header />
+      <div className="page-container">
+        <h1>Login</h1>
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="Username" autoComplete="username" />
+          <input type="password" placeholder="Password" autoComplete="current-password" />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </>
   );
 }
 

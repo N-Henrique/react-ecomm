@@ -1,8 +1,14 @@
+import { Header } from "../../components";
+import "../../styles/Page.css";
+
 function Register() {
     return (
-        <div>
-            <h1>Register</h1>
-        </div>
+        <>
+            <Header />
+            <div className="page-container">
+                <h1>Register</h1>
+            </div>
+        </>
     )
 }
 

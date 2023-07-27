@@ -1,0 +1,38 @@
+.header-wrapper {
+    background-color: #0286FF;
+    color: #ffffff;
+    height: 90px;
+}
+
+.header-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-icon {
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px;
+    margin-right: 5px;
+}
+
+.header-icon:last-child {
+    margin-right: 0px;
+}
