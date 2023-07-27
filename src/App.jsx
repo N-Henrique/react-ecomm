@@ -1,12 +1,12 @@
-import { Router } from "./components"
-import "./styles/Globals.css"
+import { Router } from './components';
+import './styles/Globals.css';
 
 function App() {
   return (
     <>
       <Router />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
