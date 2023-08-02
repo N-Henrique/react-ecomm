@@ -1,23 +1,27 @@
-import { Link } from 'react-router-dom';
-import { Header } from '../../components';
+import { Header, ProductsList } from '../../components';
 import '../../styles/Page.css';
+import { useEffect, useState } from 'react';
 
 function Home() {
+  const [products, setProducts] = useState([]);
+
+  const getProducts = async () => {
+    const response = await fetch('https://dummyjson.com/products');
+    const data = await response.json();
+    const { products } = data;
+    console.log(products);
+    setProducts(products);
+  };
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+
   return (
     <>
       <Header />
       <div className="page-container">
-        <h1>Home</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/register">Register</Link>
-            </li>
-          </ul>
-        </nav>
+        <ProductsList products={products} />
       </div>
     </>
   );
