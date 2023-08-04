@@ -1,6 +1,14 @@
+import { useContext } from 'react';
 import './ProductDisplay.css';
+import { AppContext } from '../../context';
 
 function ProductDisplay({ product }) {
+  const appContext = useContext(AppContext);
+
+  const handleBuyClick = () => {
+    appContext.addToBag(product);
+  };
+
   return (
     <div className="product-display-wrapper">
       <div className="product-display-container">
@@ -16,7 +24,7 @@ function ProductDisplay({ product }) {
           <p>{product.discountPercentage}</p>
           <p>{product.price}</p>
         </div>
-        <button>Compre agora</button>
+        <button onClick={handleBuyClick}>Compre agora</button>
       </div>
     </div>
   );

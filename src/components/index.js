@@ -1,3 +1,4 @@
+export { default as Bag } from './Bag';
 export { default as Header } from './Header';
 export { default as ProductDisplay } from './ProductDisplay';
 export { default as ProductsList } from './ProductsList';
