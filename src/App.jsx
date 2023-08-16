@@ -1,6 +1,6 @@
-import { Router } from './components';
-import { AppProvider } from './context';
-import './styles/Globals.css';
+import { Router } from "./components";
+import { AppProvider } from "./context";
+import "./styles/Defauts.css";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
-import './Search.css';
-import { BsSearch } from 'react-icons/bs';
+import "./Search.css";
+import { BsSearch } from "react-icons/bs";
 
 function Search() {
   return (
@@ -10,7 +10,7 @@ function Search() {
         placeholder="O que você procura hoje?"
       />
       <button className="search-button">
-        <BsSearch color="#0286FF" size="20" />
+        <BsSearch color="#000000" size="20" />
       </button>
     </div>
   );

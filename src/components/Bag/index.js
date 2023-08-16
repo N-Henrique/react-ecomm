@@ -1,1 +1,1 @@
-export { default } from './Bag';
+export { default } from "./Bag";

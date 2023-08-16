@@ -1,5 +1,5 @@
-import './ProductsList.css';
-import { ProductDisplay } from '..';
+import "./ProductsList.css";
+import { ProductDisplay } from "..";
 
 function ProductsList({ products = [] }) {
   const productsMap = products.map((product) => {

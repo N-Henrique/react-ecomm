@@ -1,10 +1,10 @@
-import './Header.css';
-import '../../styles/Common.css';
-import Search from '../Search/Search';
-import { BsFillBagFill, BsPersonCircle } from 'react-icons/bs';
-import { useContext, useEffect, useState } from 'react';
-import Bag from '../Bag';
-import { AppContext } from '../../context';
+import "./Header.css";
+import "../../styles/Commons.css";
+import Search from "../Search/Search";
+import { BsFillBagFill, BsPersonCircle } from "react-icons/bs";
+import { useContext, useEffect, useState } from "react";
+import Bag from "../Bag";
+import { AppContext } from "../../context";
 
 function Header() {
   const appContext = useContext(AppContext);
@@ -21,9 +21,9 @@ function Header() {
         setBagOpen(false);
       }
     };
-    window.addEventListener('keydown', handleKeydown);
+    window.addEventListener("keydown", handleKeydown);
     return () => {
-      window.removeEventListener('keydown', handleKeydown);
+      window.removeEventListener("keydown", handleKeydown);
     };
   }, []);
 
@@ -40,7 +40,11 @@ function Header() {
           <button type="button" className="header-icon">
             <BsPersonCircle color="white" size="20" />
           </button>
-          <button type="button" className="header-icon" onClick={handleBagClick}>
+          <button
+            type="button"
+            className="header-icon"
+            onClick={handleBagClick}
+          >
             <BsFillBagFill color="white" size="20" />
             <div className="header-bag-length">
               <p>{appContext.bag.length}</p>

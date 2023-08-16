@@ -1,5 +1,5 @@
-import { Header } from '../../components';
-import '../../styles/Page.css';
+import { Header } from "../../components";
+import "../../styles/Pages.css";
 
 function Error() {
   return (

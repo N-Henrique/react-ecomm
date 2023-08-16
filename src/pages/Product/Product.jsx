@@ -1,6 +1,6 @@
-import { useParams } from 'react-router-dom';
-import '../../styles/Page.css';
-import { Header } from '../../components';
+import { useParams } from "react-router-dom";
+import "../../styles/Pages.css";
+import { Header } from "../../components";
 
 function Product() {
   const { id } = useParams();

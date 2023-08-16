@@ -1,6 +1,6 @@
-import { useContext } from 'react';
-import './ProductDisplay.css';
-import { AppContext } from '../../context';
+import { useContext } from "react";
+import "./ProductDisplay.css";
+import { AppContext } from "../../context";
 
 function ProductDisplay({ product }) {
   const appContext = useContext(AppContext);
